@@ -5,8 +5,8 @@ This is a BBEdit Codeless Language Module that provides good highlighting for vi
 
 NOTE: This module currently only supports what I call CVS style diffs, AKA diffs of the style:
 
-< Change that is moving OUT of the file
-> Change that is moving INTO the file
+  `< Change that is moving OUT of the file`  
+  `> Change that is moving INTO the file`
 
 Sadly, the world of source control has moved to unified diffs, diffs of the style:
 - Change that is moving out of the file

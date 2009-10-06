@@ -9,8 +9,9 @@ NOTE: This module currently only supports what I call CVS style diffs, AKA diffs
   `> Change that is moving INTO the file`
 
 Sadly, the world of source control has moved to unified diffs, diffs of the style:
-- Change that is moving out of the file
-+ Change that is moving INTO the file
+
+`- Change that is moving out of the file`  
+`+ Change that is moving INTO the file`  
 
 This module tries hard to keep good visual appearance, maybe at the sake of semantics. For example, a removed line is tagged as a comment line in BBEdit, because in my/the standard color scheme, that means said line gets a gray-ish color.
 

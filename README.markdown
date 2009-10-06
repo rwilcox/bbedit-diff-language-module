@@ -3,12 +3,12 @@ Introduction To This Project
 
 This is a BBEdit Codeless Language Module that provides good highlighting for viewing diffs (files with a .diff extension) in BBEdit.
 
-NOTE: This module currently only supports what I call CVS style diffs, AKA diffs of the style:
+NOTE: This module supports two styles of diffs. The first is what I call CVS style diffs, AKA diffs of the style:
 
   `< Change that is moving OUT of the file`  
   `> Change that is moving INTO the file`
 
-Sadly, the world of source control has moved to unified diffs, diffs of the style:
+The world of source control has moved to unified diffs, which this language module now supports. Unified diffs are diffs of the style:
 
 `- Change that is moving out of the file`  
 `+ Change that is moving INTO the file`  
@@ -25,5 +25,4 @@ order to use it.
 Areas For Improvement
 ===========================
 
-  * Supporting Unified Diffs
   * Using new features of codeless language modules since 2005 (aka: BBEdit 7 or in whatever version codeless language modules came out in

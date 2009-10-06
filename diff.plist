@@ -67,16 +67,14 @@
 		<string>0123456789dac,</string>
 		<key>Open Block Comments</key>
 		<string></string>
-		<key>Open Line Comments</key>
-		<string>&lt;</string>
+		<key>Comment Pattern</key>
+		<string>^[&lt;-].+</string>
 		<key>Open Parameter Lists</key>
 		<string></string>
 		<key>Open Statement Blocks</key>
 		<string></string>
-		<key>Open Strings 1</key>
-		<string>&gt;</string>
-		<key>Open Strings 2</key>
-		<string></string>
+		<key>String Pattern</key>
+		<string>^[&gt;+].+</string>
 		<key>Prefix for Functions</key>
 		<string></string>
 		<key>Prefix for Procedures</key>

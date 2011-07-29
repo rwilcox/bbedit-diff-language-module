@@ -42,6 +42,10 @@
 			<key>BBLMLanguageSuffix</key>
 			<string>.diff</string>
 		</dict>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.patch</string>
+		</dict>
 	</array>
 	<key>Language Features</key>
 	<dict>

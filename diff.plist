@@ -9,13 +9,13 @@
 
 	Released under a Creative Commons Attribution License:
 	<http://creativecommons.org/licenses/by/2.0/>
-	
+
 	Requires BBEdit 8.0 or higher. To install, copy here:
-	
+
 		~/Library/Application Support/BBEdit/Language Modules/
-	
+
 	and relaunch BBEdit.
-	
+
 	Version History:
 		1.0: Initial Release
 -->
@@ -29,7 +29,10 @@
 	<key>BBLMIsCaseSensitive</key>
 	<false/>
 	<key>BBLMKeywordList</key>
-	<array/>
+	<array>
+		<string>diff</string>
+		<string>@@</string>
+	</array>
 	<key>BBLMLanguageCode</key>
 	<string>DifF</string>
 	<key>BBLMLanguageDisplayName</key>
@@ -68,21 +71,28 @@
 		<key>Escape Char in Strings 2</key>
 		<string></string>
 		<key>Identifier and Keyword Characters</key>
-		<string>0123456789dac,</string>
+		<string>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz@</string>
 		<key>Open Block Comments</key>
 		<string></string>
 		<key>Comment Pattern</key>
-		<string>^[&lt;-].+</string>
+		<string>^[&lt;-].*</string>
 		<key>Open Parameter Lists</key>
 		<string></string>
 		<key>Open Statement Blocks</key>
 		<string></string>
 		<key>String Pattern</key>
-		<string>^[&gt;+].+</string>
-		<key>Prefix for Functions</key>
-		<string></string>
-		<key>Prefix for Procedures</key>
-		<string></string>
+		<string>^[&gt;+].*</string>
+		<key>Function Pattern</key>
+		<string><![CDATA[(?x:
+			^
+			(?P<function>
+				(?P<function_name>
+					(?P<identifier>
+						diff\s+-r\s+[0123456789abcdef]+\s+(?>[a-z]:)?(?>\\|/)?([^\\/?%*:|\"<>\r\n]+(?>\\|/)?)+
+					)
+				)
+			)
+		)]]></string>
 		<key>Terminator for Prototypes 1</key>
 		<string></string>
 		<key>Terminator for Prototypes 2</key>

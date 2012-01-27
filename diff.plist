@@ -88,7 +88,7 @@
 			(?P<function>
 				(?P<function_name>
 					(?P<identifier>
-						diff\s+-r\s+[0123456789abcdef]+\s+(?>[a-z]:)?(?>\\|/)?([^\\/?%*:|\"<>\r\n]+(?>\\|/)?)+
+						diff[^?%*|\"<>\r\n]*
 					)
 				)
 			)

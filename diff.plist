@@ -50,6 +50,10 @@
 			<string>.patch</string>
 		</dict>
 	</array>
+	<key>BBLMFileNamesToMatch</key>
+	<array>
+		<string>COMMIT_EDITMSG</string>
+	</array>
 	<key>Language Features</key>
 	<dict>
 		<key>Close Block Comments</key>
